@@ -1,0 +1,8 @@
+File & Code Handling
+JSZip (free) — Generate zip downloads of project files (Issue #4)
+FileSaver.js (free) — Trigger browser download of the zip
+Prettier (free) — Auto-format generated code before showing user
+ESLint (free) — Lint generated code in your sandbox test step
+@typescript-eslint (free) — TypeScript-specific linting for generated code
+tree-sitter (free, WASM) — Parse and analyze generated code AST for the Critic agent
+Babel (free) — Transform/validate JS in browser
