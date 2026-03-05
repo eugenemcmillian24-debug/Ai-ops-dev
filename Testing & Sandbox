@@ -1,2 +1,3 @@
 Testing & Sandbox (Issue #8)
 Playwright (free) — E2E test generated apps automatically
+@webcontainer/api — Run npm test inside WebContainer in the browser, no Docker needed for basic cases
