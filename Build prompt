@@ -1,0 +1,559 @@
+Each prompt below:
+
+* Builds a **separate module**
+* Lists **features**
+* Lists **functions**
+* Lists **components**
+* Lists **integrations**
+* Lists **dependencies**
+* Lists **AI functions**
+* Is ready to paste directly into a builder agent
+
+---
+
+# 🔥 BUILD PROMPT 1 — Core App Foundation
+
+## 🎯 Goal
+
+Initialize production-ready **Next.js 15 fullstack environment**
+
+### ✅ Features
+
+* App Router setup
+* TypeScript strict mode
+* Tailwind + ShadCN
+* ESLint
+* Environment validation
+* Folder structure from build.json
+
+### ⚙ Functions
+
+* Environment variable loader
+* Zod env validation
+* Global layout + theme provider
+* API route scaffolding
+
+### 🧩 Components
+
+* `layout.tsx`
+* `providers.tsx`
+* `env.ts`
+* `globals.css`
+* `theme-provider.tsx`
+
+### 🔌 Integrations
+
+* Vercel-ready config
+* Edge runtime support
+
+### 📦 Dependencies
+
+Core:
+
+* next
+* typescript
+* tailwindcss
+* class-variance-authority
+* tailwind-merge
+* zod
+* lucide-react
+
+### 🤖 AI Functions
+
+None yet (foundation layer)
+
+---
+
+# 🔥 BUILD PROMPT 2 — Authentication System
+
+## 🎯 Goal
+
+Full NextAuth system with DB persistence
+
+### ✅ Features
+
+* GitHub login
+* Google login
+* Credentials login
+* JWT sessions
+* Protected routes
+* CSRF protection
+
+### ⚙ Functions
+
+* Auth handler `/api/auth/[...nextauth]`
+* Session helper
+* Middleware route guard
+* Role handling
+
+### 🧩 Components
+
+* `login-button.tsx`
+* `user-dropdown.tsx`
+* `auth-provider.tsx`
+
+### 🔌 Integrations
+
+* NextAuth.js
+* Neon database
+* Drizzle ORM
+
+### 📦 Dependencies
+
+* next-auth
+* drizzle-orm
+* @neondatabase/serverless
+* zod
+
+### 🤖 AI Functions
+
+* AI session awareness
+* User-token tracking for AI usage
+
+---
+
+# 🔥 BUILD PROMPT 3 — Database Layer (Neon + Drizzle)
+
+## 🎯 Goal
+
+Branch-safe DB architecture
+
+### ✅ Features
+
+* Users table
+* Projects table
+* Files storage JSONB
+* Usage tracking
+* Branch isolation
+
+### ⚙ Functions
+
+* DB connection
+* Schema generation
+* Migration scripts
+* Usage incrementer
+* Token counter
+
+### 🧩 Components
+
+* `db.ts`
+* `schema.ts`
+* `usage.ts`
+
+### 🔌 Integrations
+
+* Neon Postgres
+* Drizzle ORM
+
+### 📦 Dependencies
+
+* drizzle-orm
+* drizzle-kit
+* @neondatabase/serverless
+
+### 🤖 AI Functions
+
+* Auto-generate schema from prompt (dbDesigner agent)
+
+---
+
+# 🔥 BUILD PROMPT 4 — AI Multi-Agent System (LangGraph)
+
+## 🎯 Goal
+
+Implement full codecraft-graph orchestration
+
+### ✅ Features
+
+* Router → Planner → DB → API → Coder → Critic → Deployer
+* Streaming responses
+* Checkpoint memory
+* Structured file outputs
+
+### ⚙ Functions
+
+* Graph builder
+* Node definitions
+* Streaming event handler
+* Model fallback chain
+
+### 🧩 Components
+
+* `codecraft-graph.ts`
+* `ai.ts`
+* `agent-status.tsx`
+
+### 🔌 Integrations
+
+* Groq
+* OpenRouter
+* LangGraph
+* Zod structured outputs
+
+### 📦 Dependencies
+
+* langgraph
+* @langchain/core
+* @ai-sdk/groq
+* @ai-sdk/openai
+* zod
+
+### 🤖 AI Functions
+
+* Model routing
+* Task planning
+* Code generation
+* Security auditing
+* Deployment scripting
+
+---
+
+# 🔥 BUILD PROMPT 5 — AI Terminal UI
+
+## 🎯 Goal
+
+Build `/ai-terminal` experience
+
+### ✅ Features
+
+* Chat streaming
+* Model selector
+* Voice input
+* File tree viewer
+* Agent status tracker
+
+### ⚙ Functions
+
+* Stream handler
+* Voice-to-text
+* File diff viewer
+* Model switcher
+
+### 🧩 Components
+
+* `model-selector.tsx`
+* `chat-stream.tsx`
+* `voice-input.tsx`
+* `file-tree.tsx`
+* `agent-status.tsx`
+
+### 🔌 Integrations
+
+* Groq Whisper
+* LangGraph streaming
+* Monaco Editor
+
+### 📦 Dependencies
+
+* @monaco-editor/react
+* lucide-react
+
+### 🤖 AI Functions
+
+* Live code generation
+* Voice coding mode
+* File creation from structured output
+
+---
+
+# 🔥 BUILD PROMPT 6 — WebContainer Live Preview
+
+## 🎯 Goal
+
+Full Node.js in-browser runtime
+
+### ✅ Features
+
+* npm install
+* Next.js run inside browser
+* Hot reload
+* Terminal output
+* Fallback to Sandpack
+
+### ⚙ Functions
+
+* WebContainer boot
+* FS mount
+* npm runner
+* Preview iframe connector
+
+### 🧩 Components
+
+* `webcontainer-preview.tsx`
+* `terminal.tsx`
+* `preview-frame.tsx`
+
+### 🔌 Integrations
+
+* @webcontainer/api
+* Sandpack
+
+### 📦 Dependencies
+
+* @webcontainer/api
+* @codesandbox/sandpack-react
+
+### 🤖 AI Functions
+
+* Auto-run generated apps
+* Error capture → send to Critic agent
+
+---
+
+# 🔥 BUILD PROMPT 7 — Projects System
+
+## 🎯 Goal
+
+Project management + persistence
+
+### ✅ Features
+
+* Save/load projects
+* Fork
+* Public gallery
+* Export ZIP
+* Versioning
+
+### ⚙ Functions
+
+* Save files JSON
+* Clone project
+* Generate ZIP
+* List public projects
+
+### 🧩 Components
+
+* `project-card.tsx`
+* `project-gallery.tsx`
+* `export-button.tsx`
+
+### 🔌 Integrations
+
+* Neon
+* Supabase storage
+
+### 📦 Dependencies
+
+* @supabase/supabase-js
+
+### 🤖 AI Functions
+
+* Suggest improvements
+* Refactor project on demand
+
+---
+
+# 🔥 BUILD PROMPT 8 — Deployment Pipeline
+
+## 🎯 Goal
+
+One-click GitHub + Vercel deployment
+
+### ✅ Features
+
+* Create GitHub repo
+* Initial commit
+* Create Vercel project
+* Trigger deployment
+* Return live URL
+
+### ⚙ Functions
+
+* GitHub API wrapper
+* Vercel API wrapper
+* Deployment logger
+* Token validation
+
+### 🧩 Components
+
+* `deploy-button.tsx`
+* `deployment-status.tsx`
+
+### 🔌 Integrations
+
+* GitHub API (Octokit)
+* Vercel REST API
+
+### 📦 Dependencies
+
+* @octokit/rest
+
+### 🤖 AI Functions
+
+* Deployer agent generates CI config
+* Auto-fix failed deployments
+
+---
+
+# 🔥 BUILD PROMPT 9 — Payments & Monetization
+
+## 🎯 Goal
+
+Stripe subscription + usage billing
+
+### ✅ Features
+
+* Starter / Pro / Enterprise
+* Checkout sessions
+* Webhooks
+* Usage tracking
+* Premium model gating
+
+### ⚙ Functions
+
+* Stripe checkout creator
+* Webhook handler
+* Subscription checker
+* Usage limiter
+
+### 🧩 Components
+
+* `pricing-table.tsx`
+* `upgrade-modal.tsx`
+
+### 🔌 Integrations
+
+* Stripe API
+* Neon usage table
+
+### 📦 Dependencies
+
+* stripe
+
+### 🤖 AI Functions
+
+* Premium model unlock
+* Enterprise deployment flow
+
+---
+
+# 🔥 BUILD PROMPT 10 — Mobile Export System
+
+## 🎯 Goal
+
+Convert web apps into mobile-ready builds
+
+### ✅ Features
+
+* Expo Snack export
+* QR code
+* Capacitor fallback
+* Offline sync
+
+### ⚙ Functions
+
+* Generate Expo config
+* Create Snack URL
+* Build Capacitor wrapper
+
+### 🧩 Components
+
+* `mobile-export.tsx`
+* `qr-display.tsx`
+
+### 🔌 Integrations
+
+* Expo
+* Supabase sync
+
+### 📦 Dependencies
+
+* expo config generator logic
+
+### 🤖 AI Functions
+
+* Auto-convert UI to React Native
+* Optimize mobile layout
+
+---
+
+# 🔥 BUILD PROMPT 11 — Realtime + Queues
+
+## 🎯 Goal
+
+Background jobs + live updates
+
+### ✅ Features
+
+* Supabase Realtime
+* Redis queues
+* Job progress tracking
+* PostgreSQL LISTEN/NOTIFY
+
+### ⚙ Functions
+
+* Queue processor
+* Job state updater
+* Realtime broadcaster
+
+### 🧩 Components
+
+* `job-progress.tsx`
+* `live-status-badge.tsx`
+
+### 🔌 Integrations
+
+* Supabase Realtime
+* Upstash Redis
+
+### 📦 Dependencies
+
+* @upstash/redis
+* @supabase/supabase-js
+
+### 🤖 AI Functions
+
+* Async task execution
+* Background deployment handling
+
+---
+
+# 🔥 BUILD PROMPT 12 — Security & Production Hardening
+
+## 🎯 Goal
+
+Enterprise-grade protection
+
+### ✅ Features
+
+* Rate limiting
+* CORS strict
+* Zod validation everywhere
+* Scoped tokens
+* API key isolation
+* Sentry integration
+
+### ⚙ Functions
+
+* Request validator middleware
+* Rate limiter
+* Audit logger
+
+### 🧩 Components
+
+* `error-boundary.tsx`
+* `security-logger.ts`
+
+### 🔌 Integrations
+
+* Vercel Edge
+* Sentry
+
+### 📦 Dependencies
+
+* zod
+* rate limit utilities
+
+### 🤖 AI Functions
+
+* Critic agent security scans
+* Auto-patch vulnerabilities
+
+---
+
+# 🧠 Final Result
+
+You now have **12 isolated build prompts** that together create:
+
+> Production AI Dev Environment
+> Prompt → Live App → GitHub Repo → Vercel URL → Mobile Export → Monetized Platform
