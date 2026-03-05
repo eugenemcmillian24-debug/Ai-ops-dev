@@ -1,0 +1,8 @@
+UI & Design
+shadcn/ui (free, MIT) — You have this; use the CLI to scaffold components into generated apps too
+Radix UI (free) — Accessible primitives underlying shadcn
+Framer Motion (free) — Animations for your dashboard UI
+Tailwind CSS (free) — Already in your stack
+Lucide React (free) — Icon set
+cmdk (free) — Command palette (Command+K) for your builder UI
+React Flow (free tier) — Visualize your multi-agent graph / project file tree as a node graph
